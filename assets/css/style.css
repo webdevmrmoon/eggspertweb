@@ -708,7 +708,7 @@ p {
 }
 
 .funfactContent h4 {
-    font-weight: 300;
+    font-weight: 200;
     font-family: 'Montserrat';
     color: #fff;
     font-size: 52px;
@@ -717,8 +717,8 @@ p {
 .funfactContent p {
     color: #fff;
     font-size: 30px;
-    line-height: 48px;
-    font-weight: 200;
+    line-height: 40px;
+    font-weight: 300;
     
 }
 .visualsImg {
@@ -808,7 +808,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #ffffff25;
+    background: #ffffff42;
     bottom: 0px;
     right: 0px;
     left: 0px;
@@ -874,7 +874,7 @@ p {
 }
 
 .workwithUs {
-    padding-bottom: 220px;
+    padding-bottom: 280px;
 }
 
 
@@ -886,7 +886,7 @@ p {
    width: 40%;
     margin: auto;
     position: relative;
-    top: -150px;
+    top: -120px;
     animation: zoom-in-zoom-out 12s ease-out infinite;
 }
 @keyframes zoom-in-zoom-out {
@@ -918,7 +918,7 @@ p {
 .testiCard {
     display: flex;
     background: url(../img/testimonials/testibg2.png);
-    background-size: 90%;
+    background-size: contain;
     height: 80vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -946,10 +946,19 @@ p {
 
 .testiSwiper .swiper-slide.swiper-slide-active .testiCard {
     background: url(../img/testimonials/testibg.png);
-    background-size: 90%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     
+}
+
+
+.locationsWrapper {
+    width: 100%;
+    margin-top: 30px;
+}
+.locationsWrapper img {
+    width: 100%;
 }
 
 
@@ -1048,7 +1057,153 @@ p {
 }
 
 
-@media screen and (max-width:1600px) and (min-width: 1200px) {
+@media screen and (max-width: 1920px) and (min-width: 1700px) {
+    .burgerImg {
+        width: 360px;
+    }
+    .funfacImg {
+        width: 48%;
+        float: right;
+        position: absolute;
+        right: 30px;
+        bottom: 50px;
+    }
+    .menuCard {
+        height: 90vh;
+    }
+}
+
+
+@media screen and (max-width:1699px) and (min-width: 1500px) {
+    .banner {
+        height: 100vh 842px;
+    }
+    .bnrcontainer .compo:nth-child(1) {
+        width: 380px;
+        bottom: 110px;
+    }
+    .bnrcontainer .compo:nth-child(3) {
+        bottom: -140px;
+        width: 480px;
+    }
+    .bnrcontainer .compo:nth-child(4) {
+        width: 680px;
+        right: -160px;
+    }
+    .aboutUsContent h2 {
+        font-size: 100px;
+    }
+    .burgerImg {
+        position: absolute;
+        width: 350px;
+        right: 20px;
+        bottom: -140px;
+    }
+    .funfacImg {
+        width: 48%;
+        right: 50px;
+        bottom: 50px;
+    }
+    .funfactSlider  {
+        margin-top: 70px;
+    }
+    .visualSec .titleSec p {
+        font-size: 36px;
+        width: 77%;
+    }
+    .menuCard {
+        height: 90vh;
+    }
+    .orderElementii {
+        width: 235px;
+        height: 310px;
+    }
+    .footerLogoImg {
+        width: 232px;
+        height: 300px;
+        left: 7%;
+    }
+    .footerContacts ul {
+        gap: 17px;
+    }
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1369px) {
+     .banner {
+        height: 100vh 842px;
+    }
+    .bnrcontainer .compo:nth-child(1) {
+        width: 350px;
+        bottom: 180px;
+    }
+    .bnrcontainer .compo:nth-child(3) {
+        bottom: -100px;
+        width: 480px;
+    }
+    .bnrcontainer .compo:nth-child(4) {
+        width: 630px;
+        right: -160px;
+    }
+    .aboutUsContent h2 {
+        font-size: 100px;
+    }
+    .burgerImg {
+        position: absolute;
+        width: 350px;
+        right: -70px;
+        bottom: -170px;
+    }
+    .funfactCard {
+        padding: 75px;
+    }
+    .funfactContent p {
+        font-size: 25px;
+    }
+    .funfactContent h4 {
+        font-size: 48px;
+    }
+    .funfacImg {
+        width: 50%;
+        right: 30px;
+        bottom: 70px;
+    }
+    .funfactSlider  {
+        margin-top: 70px;
+    }
+    .visualSec .titleSec p {
+        font-size: 29px;
+        width: 74%;
+    }
+    .menuCard {
+        height: 84vh;
+        border-radius: 20px;
+    }
+    .servicetSwiper .swiper-slide::after {
+        border-radius: 20px;
+    }
+    .orderElementii {
+        width: 235px;
+        height: 310px;
+    }
+    .titleSec.centered p.custompadd {
+        line-height: normal;
+        padding: 0px 10%;
+    }
+    .footerLogoImg {
+        width: 232px;
+        height: 300px;
+        left: 7%;
+    }
+    .footerContacts ul {
+        gap: 17px;
+    }
+    .funFactsSec.pb-70 {
+        padding-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width:1368px) and (min-width: 1280px) {
     .aboutUsContent p {
         padding: 0px 0%;
     }
@@ -1059,10 +1214,9 @@ p {
         bottom: -130px;
     }
    .funfactContent p {
-       color: #fff;
-       font-size: 20px;
-       line-height: 39px;
-       font-weight: 200;
+        font-size: 24px;
+        line-height: 39px;
+        font-weight: 300;
    }
     .funfactContent {
         width: 51%;
@@ -1073,22 +1227,59 @@ p {
     }
     .funfacImg {
         bottom: 40px;
+        width: 46%;
+        right: 15px;
     }
     .funfactSlider .item {
         padding-bottom: 90px;
     }
+    .menuCard {
+        height: 80vh;
+        border-radius: 20px;
+    }
+    .servicetSwiper .swiper-slide::after {
+        border-radius: 20px;
+    }
+    .orderElementii {
+        width: 235px;
+        height: 309px
+    }
+    .titleSec.centered p.custompadd {
+        line-height: normal;
+        padding: 0px 9%;
+        font-size: 35px;
+    }
+    .footerLogoImg {
+        left: 6%;
+        width: 252px;
+        height: 329px;
+    }
+    .footerContacts ul li a {
+        font-size: 26px;
+    }
+    .footerContacts {
+        width: 58%;
+    }
     .bnrcontainer .compo:nth-child(4) {
-        width: 560px;
+        width: 580px;
+        bottom: 0px;
+        right: -150px;
     }
     .bnrcontainer .compo:nth-child(3) {
-        width: 350px;
-        bottom: -100px;
+        width: 460px;
+        bottom: -110px;
+    }
+    .bnrcontainer .compo:nth-child(2) {
+        width: 293px;
+        left: 24%;
+        bottom: 10px;
     }
     .bnrcontainer .compo:nth-child(1) {
-        width: 340px;
+        width: 360px;
+        left: -17px;
     }
     .banner {
-        height: 80vh;
+        height: 100vh;
     }
     .logoSection {
         width: 150px;

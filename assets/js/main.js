@@ -180,7 +180,7 @@ $(function () {
       delay: 5000,
       disableOnInteraction: false,
     },
-    // autoplay: false,
+    autoplay: false,
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
