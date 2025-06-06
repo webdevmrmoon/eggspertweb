@@ -90,40 +90,72 @@ document.querySelectorAll('.tab-slider--trigger').forEach(tab => {
 
 
 $(function () {
-  $('.funfactSlider').owlCarousel({
-      loop: true,
-      margin: 20,
-      nav: true,
-      dots: false,
-      autoplay: true,
-      autoplayTimeout:3000,
-      smartSpeed:2000,
-      navText: [
-          '<img src="assets/img/icons/prev-arrow.svg">',
-          '<img src="assets/img/icons/right-arrow.svg">'
-      ],
-      responsive: {
-          0: {
-              items: 1.1
-          },
-          600: {
-              items: 1.1
-          },
-          1000 : {
-            items : 1.1
-          },
-          1299: {
-            items: 1.1
-          },
-          1600 : {
-            items: 1.1
-          },
-          1920: {
-            items: 1.1
-          }
+  // $('.funfactSlider').owlCarousel({
+  //     loop: true,
+  //     margin: 20,
+  //     nav: true,
+  //     dots: false,
+  //     autoplay: true,
+  //     autoplayTimeout:3000,
+  //     smartSpeed:2000,
+  //     navText: [
+  //         '<img src="assets/img/icons/prev-arrow.svg">',
+  //         '<img src="assets/img/icons/right-arrow.svg">'
+  //     ],
+  //     responsive: {
+  //         0: {
+  //             items: 1.1
+  //         },
+  //         600: {
+  //             items: 1.1
+  //         },
+  //         1000 : {
+  //           items : 1.1
+  //         },
+  //         1299: {
+  //           items: 1.1
+  //         },
+  //         1600 : {
+  //           items: 1.1
+  //         },
+  //         1920: {
+  //           items: 1.1
+  //         }
+  //     }
+  // })
+
+
+
+    var swiper = new Swiper('.funfactSlider', {
+    loop: false,
+    slidesPerView: 1.1,
+    spaceBetween: 100,
+    centeredSlides: false,
+    grabCursor: true,
+    slidesPerGroupSkip: 1,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    autoplay: false,
+    speed: 2000,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+     
+      1920: {
+        slidesPerView: 1.1,
       }
-  })
+    }
+  });
 })
+
+
+
+
+
 
 // Our Chef
 $(function () {
@@ -611,7 +643,7 @@ $(document).ready(function () {
       delay: 5000,
       disableOnInteraction: false,
     },
-
+    autoplay: false,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

@@ -35,7 +35,7 @@
         <div class="custom-cursor"><div class="ball"></div></div>
     </div>	
     <!-- <div class="loader">
-        <div class="loaderContainer">
+        <div class="loadersite-width">
             <div class="dot dot-1"></div>
             <div class="dot dot-2"></div>
             <div class="dot dot-3"></div>
@@ -55,7 +55,7 @@
         <!-- :: Header :: -->
         <div class="headerBanner">
             <header class="headerSection wow animate__fadeIn" data-wow-delay="0.2s">
-                <div class="container">
+                <div class="site-width">
                     <div class="headerWrapper">
                         <div class="headerNav ">
                             <ul>
@@ -96,7 +96,7 @@
 
 
         <section class="aboutUs pt-70 pb-70">
-            <div class="container">
+            <div class="site-width">
                 <div class="aboutUsWrapper">
                     <a href="javascript:void(0)" class="wow animate__fadeIn" data-wow-delay="0.2s">
                         <div class="aboutusHeader">
@@ -116,32 +116,77 @@
 
 
         <section class="funFactsSec pt-70 pb-70">
-            <div class="container">
+            <div class="site-width">
                 <div class="titleSec wow animate__fadeInDown">
                     <h2>Fun Facts</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
                 </div>
 
-                <div class="contentWrapper">
-                    <div class="funfactSlider owl-carousel owl-theme">
-                        <div class="item wow animate__zoomIn">
+               
+            </div>
+            <div class="contentWrapper">
+                <div class="swiper-container funfactSlider">
+                    <div class="swiper-wrapper">
+            
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide wow animate__zoomIn">
                             <div class="funfactCard">
                                 <div class="funfactContent">
                                     <h4>Did you know ?</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                        tincidunt
+                                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
                                 </div>
-                                <div class="funfacImg woow animate__zoomIn" data-wow-delay="0.3s">
+                                <div class="funfacImg wow animate__zoomIn" data-wow-delay="0.3s">
                                     <img src="assets/img/other/fun-fact-img1.png" alt="img">
                                 </div>
                             </div>
                         </div>
+            
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide wow animate__zoomIn">
+                            <div class="funfactCard">
+                                <div class="funfactContent">
+                                    <h4>Did you know ?</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                        tincidunt
+                                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+                                </div>
+                                <div class="funfacImg wow animate__zoomIn" data-wow-delay="0.3s">
+                                    <img src="assets/img/other/fun-fact-img1.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide wow animate__zoomIn">
+                            <div class="funfactCard">
+                                <div class="funfactContent">
+                                    <h4>Did you know ?</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                        tincidunt
+                                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+                                </div>
+                                <div class="funfacImg wow animate__zoomIn" data-wow-delay="0.3s">
+                                    <img src="assets/img/other/fun-fact-img1.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Duplicate this block for more slides -->
+            
                     </div>
+            
+                    <!-- Optional controls -->
+                    <!-- <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
                 </div>
             </div>
         </section>
 
         <section class="visualSec pb-70">
-            <div class="container">
+            <div class="site-width">
                 <div class="titleSec wow animate__fadeInDown">
                     <h2>Visuals</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
@@ -153,7 +198,7 @@
         </section>
 
         <section class="ourChef pb-70">
-            <div class="container wow animate__fadeInDown">
+            <div class="site-width wow animate__fadeInDown">
                <div class="titleSec">
                     <h2>Meet Our Chefs</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
@@ -176,14 +221,16 @@
             </div>
         </section>
 
-        <section class="visualSec pb-70">
-            <div class="container">
-                <div class="titleSec wow animate__fadeInDown">
+        <section class="visualSec pt-70 pb-70">
+            <div class="site-width">
+                <!-- <div class="titleSec wow animate__fadeInDown">
                     <h2>Visuals</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                </div>
-                <div class="visualsImg wow animate__fadeInDown">
-                    <img src="assets/img/other/visuals-img1.png" alt="img">
+                </div> -->
+                <div class="visualsImg vidplayer wow animate__fadeInDown">
+                     <video id="autoplayVideo" autoplay="" muted="" loop="" playsinline="" preload="metadata">
+                        <source src="assets/img/food_montaj.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </section>
@@ -191,32 +238,107 @@
         <!-- Services -->
 
     <section class="services bg-1 pt-50 pb-100">
-        <div class="container">
+        <div class="site-width">
             <div class="serviceWrapper">
                 <div class="servicetSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide" style="background: url(assets/img/products/cake.jpg)">
-                            <div class="menuCard">
-                                <div class="menuTitle">
-                                    <h3>Menu</h3>
+                            <a href="javascript:void(0)">
+                                <div class="categoryCard">
+                                    <div class="categoryImg">
+                                        <img src="assets/img/menus/boiled-eggs.png" alt="img">
+                                    </div>
+                                    <div class="categoryContent">
+                                        <h4>Boiled Eggs</h4>
+                                        <p>Nutritious. Perfect Every Time.</p>
+                                        <span>5+ Varients</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="swiper-slide" style="background: url(assets/img/products/cake.jpg)">
-                            <div class="menuCard">
-                                <div class="menuTitle">
-                                    <h3>Menu</h3>
+                            <a href="javascript:void(0)">
+                                <div class="categoryCard">
+                                    <div class="categoryImg">
+                                        <img src="assets/img/menus/Signature-Egg-Dishes.png" alt="img">
+                                    </div>
+                                    <div class="categoryContent">
+                                        <h4>Signature Egg Dishes</h4>
+                                        <p>Our Stars. Your New Favorites.</p>
+                                        <span>5+ Varients</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="swiper-slide" style="background: url(assets/img/products/cake.jpg)">
-                            <div class="menuCard">
+                            <!-- <div class="menuCard">
                                 <div class="menuTitle">
                                     <h3>Menu</h3>
                                 </div>
-                            </div>
+                            </div> -->
+
+                            <a href="javascript:void(0)">
+                                <div class="categoryCard">
+                                    <div class="categoryImg">
+                                        <img src="assets/img/menus/Biryani.png" alt="img">
+                                    </div>
+                                    <div class="categoryContent">
+                                        <h4>Biryani</h4>
+                                        <p>Layers of Spice, Rice & Eggcellence.</p>
+                                        <span>4+ Varients</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                        
+                        <div class="swiper-slide" style="background: url(assets/img/products/cake.jpg)">
+                            <a href="javascript:void(0)">
+                                <div class="categoryCard">
+                                    <div class="categoryImg">
+                                        <img src="assets/img/menus/Sandwiches.png" alt="img">
+                                    </div>
+                                    <div class="categoryContent">
+                                        <h4>Sandwiches</h4>
+                                        <p>Stacked High with Eggy Goodness.</p>
+                                        <span>8+ Varients</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="swiper-slide" style="background: url(assets/img/products/cake.jpg)">
+                            <a href="javascript:void(0)">
+                                <div class="categoryCard">
+                                    <div class="categoryImg">
+                                        <img src="assets/img/menus/Maggi.png" alt="img">
+                                    </div>
+                                    <div class="categoryContent">
+                                        <h4>Maggi</h4>
+                                        <p>Favorite Noodles—Eggspert Style</p>
+                                        <span>9+ Varients</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="background: url(assets/img/products/cake.jpg)">
+                            <a href="javascript:void(0)">
+                                <div class="categoryCard">
+                                    <div class="categoryImg">
+                                        <img src="assets/img/menus/Grilled-Eggs.png" alt="img">
+                                    </div>
+                                    <div class="categoryContent">
+                                        <h4>Grilled Eggs</h4>
+                                        <p>Smoky, Satisfying, Straight Fire.</p>
+                                        <span>3+ Varients</span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -233,7 +355,7 @@
     <!-- Section End -->
 
     <section class="orderNowBtns pb-100">
-        <div class="container">
+        <div class="site-width">
             <div class="ordernowElementWrapper">
                 <div class="orderElementi">
                     <h4>Order Now</h4>
@@ -248,7 +370,7 @@
     </section>
 
     <section class="testimonails pb-100 overflow-hidden">
-        <div class="container">
+        <div class="site-width">
              <div class="titleSec centered wow animate__fadeInDown">
                     <h2>Testimonails</h2>
                 </div>
@@ -296,7 +418,7 @@
     </section>
 
     <section class="locations">
-        <div class="container">
+        <div class="site-width">
             <div class="titleSec centered wow animate__fadeInDown">
                 <h2>Find Us (Location)</h2>
             </div>
@@ -307,7 +429,7 @@
     </section>
 
     <section class="workwithUs pt-70">
-        <div class="container">
+        <div class="site-width">
             <div class="titleSec centered wow animate__fadeInDown">
                 <h2>Work With Us </h2>
                 <p class="custompadd">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</p>
@@ -322,7 +444,7 @@
         <div class="footerLogoImg">
             <a href="index.html"><img src="assets/img/logo-light.png" alt="img"></a>
         </div>
-        <div class="container">
+        <div class="site-width">
             <div class="footerWrapper">
                 <h4 class="footertitle">Contact Us</h4>
                 <div class="footerContacts">
@@ -337,7 +459,7 @@
             </div>
     
             <div class="footerSocials">
-                <div class="container">
+                <div class="site-width">
                     <ul class="socialLinks">
                         <li><a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a></li>
                         <li><a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a></li>
