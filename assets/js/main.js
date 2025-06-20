@@ -127,17 +127,17 @@ $(function () {
 
 
     var swiper = new Swiper('.funfactSlider', {
-    loop: false,
+    loop: true,
     slidesPerView: 1.1,
     spaceBetween: 100,
-    centeredSlides: false,
+    centeredSlides: true,
     grabCursor: true,
     slidesPerGroupSkip: 1,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false
     },
-    autoplay: false,
+    autoplay: true,
     speed: 2000,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -146,7 +146,7 @@ $(function () {
     breakpoints: {
      
       1920: {
-        slidesPerView: 1.1,
+        slidesPerView: 1.5,
       }
     }
   });
@@ -161,11 +161,12 @@ $(function () {
 $(function () {
   $('.chefSlider').owlCarousel({
       loop: true,
-      margin: 20,
-      nav: true,
+      margin: 0,
+      nav: false,
       dots: false,
       autoplay: true,
-      autoplayTimeout:3000,
+      center: true,
+      autoplayTimeout:6000,
       smartSpeed:2000,
       navText: [
           '<img src="assets/img/icons/prev-arrow.svg">',
@@ -179,16 +180,16 @@ $(function () {
               items: 1
           },
           1000 : {
-            items : 1
+            items : 2.2
           },
           1299: {
-            items: 1
+            items: 2.2
           },
           1600 : {
-            items: 1
+            items: 2.2
           },
           1920: {
-            items: 1
+            items: 2.2
           }
       }
   })
@@ -632,46 +633,50 @@ $(document).ready(function () {
 });
 
 
-
 $(document).ready(function () {
-  new Swiper('.testiSwiper', {
-    loop: false,
-    slidesPerView: 1.2,
-    spaceBetween: 10,
+  const mySwiper = new Swiper('.testiSwiper', {
+    loop: true,
     centeredSlides: true,
+    spaceBetween: 10,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
     },
-    autoplay: false,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-
     breakpoints: {
-      1910: {
-        slidesPerView: 1.2,
-        spaceBetween: 10
+      1920: {
+        slidesPerView: 2.2,
+        spaceBetween: 100
       },
       1018: {
-        slidesPerView: 1.2,
+        slidesPerView: 2.2,
         spaceBetween: 10
       },
       480: {
-        slidesPerView: 1.2,
+        slidesPerView: 2.2,
         spaceBetween: 10
       }
     }
   });
+
+  // Pause autoplay on hover
+  $('.testiSwiper').on('mouseenter', function () {
+    console.log('stop autoplay');
+    mySwiper.autoplay.stop();
+  });
+
+  $('.testiSwiper').on('mouseleave', function () {
+    console.log('start autoplay');
+    mySwiper.autoplay.start();
+  });
 });
-
-
 
 
   
@@ -713,3 +718,85 @@ document.querySelectorAll(".hamburger").forEach((element) => {
     element.classList.toggle("is-active");
   });
 });
+
+
+// Tooltip Js
+jQuery(function($) {
+  const $tooltip = $('<div class="lite-tooltip" id="tooltip"></div>'),
+        selector = '[data-lite-tooltip]',
+        tipOffset = 2,
+        tipSize = 6 + tipOffset,
+        positions = {
+          top: o => ({
+            top: (o.bbox.top + o.st) - o.ttHeight - tipSize,
+            left: o.bbox.left + (o.bbox.width / 2) - (o.ttWidth / 2)
+          }),
+          bottom: o => ({
+            top: (o.bbox.bottom + o.st) + tipSize,
+            left: o.bbox.left + (o.bbox.width / 2) - (o.ttWidth / 2)
+          }),
+          right: o => ({
+            top: (o.bbox.top + o.st) + (o.bbox.height / 2) - (o.ttHeight / 2),
+            left: o.bbox.right + tipSize
+          }),
+          left: o => ({
+            top: (o.bbox.top + o.st) + (o.bbox.height / 2) - (o.ttHeight / 2),
+            left: o.bbox.left - o.ttWidth - tipSize
+          })
+        };
+
+  $(document.body).append($tooltip);
+  let isHoveringTooltip = false;
+
+  $(document)
+    .on('mouseenter', selector, function(e) {
+      const el = $(this);
+      const data = el.data();
+      const content = data.liteTooltip || 'Tooltip';
+      const position = data.liteTooltipPosition || 'top';
+      const tooltipWidth = parseInt(data.liteTooltipWidth) || 280;
+      const bbox = e.currentTarget.getBoundingClientRect();
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const finalPosition = positions[position] ? position : 'top';
+
+      $tooltip
+        .html(content)
+        .css({ width: tooltipWidth, display: 'block' });
+
+      const tooltipHeight = $tooltip.outerHeight();
+      const tooltipOffset = positions[finalPosition]({
+        ttWidth: tooltipWidth,
+        ttHeight: tooltipHeight,
+        bbox: bbox,
+        st: scrollTop
+      });
+
+      $tooltip
+        .css({
+          top: tooltipOffset.top,
+          left: tooltipOffset.left,
+          opacity: 1
+        })
+        .attr('class', `lite-tooltip ${finalPosition !== 'top' ? 'lite-tooltip-' + finalPosition : ''}`);
+    })
+    .on('mouseleave', selector, function () {
+      // delay hiding to allow pointer to enter tooltip
+      setTimeout(() => {
+        if (!isHoveringTooltip) hideTooltip();
+      }, 100);
+    });
+
+  $tooltip
+    .on('mouseenter', function () {
+      isHoveringTooltip = true;
+    })
+    .on('mouseleave', function () {
+      isHoveringTooltip = false;
+      hideTooltip();
+    });
+
+  function hideTooltip() {
+    $tooltip.css({ opacity: 0, top: '-9999px', left: '-9999px', display: 'none' });
+  }
+});
+

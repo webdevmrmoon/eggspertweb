@@ -657,8 +657,8 @@ p {
     margin-bottom: 20px;
 }
 .aboutUsContent p {
-    font-size: 33px;
-    line-height: 42px;
+    font-size: 19px;
+    line-height: 28px;
     color: #fff;
     font-weight: 300;
     width: 1180px;
@@ -679,13 +679,14 @@ p {
 }
 .titleSec h2 {
     color: #b62029;
-    font-size: 98px;
+    font-size: 68px;
 }
 .titleSec p {
-    font-weight: 400;
-    font-size: 48px;
+   font-weight: 400;
+    font-size: 19px;
     color: #000000;
     margin-top: 12px;
+    line-height: 28px;
 }
 
 
@@ -695,9 +696,9 @@ p {
 
 .funfactCard {
     background: #b62029;
-    padding: 115px;
+    padding: 95px;
     border-radius: 70px;
-    height: 74vh;
+    height: 590px;
     padding-top: 80px;
     padding-bottom: 110px;
     display: flex;
@@ -725,15 +726,15 @@ p {
     font-weight: 200;
     font-family: 'Montserrat';
     color: #fff;
-    font-size: 72px;
+    font-size: 42px;
     margin-bottom: 20px;
 }
 .funfactContent p {
-    color: #fff;
-    font-size: 35px;
-    line-height: 50px;
-    font-weight: 300;
-    
+   color: #fff;
+   font-size: 16px;
+   line-height: 50px;
+   font-weight: 300;
+   line-height: 28px;
 }
 .contentWrapper {
     padding-left: 5%;
@@ -742,13 +743,16 @@ p {
 .swiper-container.funfactSlider  {
     padding-bottom: 100px;
 }
+
  
 
 
 
 .visualsImg {
     width: 100%;
-    margin-top: -160px;
+    /* margin-top: -160px; */
+    border-radius: 60px;
+    overflow: hidden;
 }
 .visualsImg img {
     width: 100%;
@@ -756,29 +760,29 @@ p {
 
 
 .ourChefContent {
-   padding: 167px;
-    width: 1000px;
-    height: 1000px;
-    border-radius: 100%;
-    background: #b62029;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 380px;
-    margin-left: -210px;
+   padding: 87px;
+ width: 640px;
+ height: 640px;
+ border-radius: 100%;
+ background: #b62029;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ padding-right: 203px;
+ margin-left: 0px;
 }
 .ourChefContent h2 {
-       color: #fff;
-    font-family: 'Montserrat';
-    margin-bottom: 30px;
-    font-weight: 200;
-    font-size: 59px;
+       font-family: 'Montserrat';
+    margin-bottom: 14px;
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
 }
 .ourChefContent p {
-        color: #fff;
-    font-size: 32px;
+        font-size: 14px;
     font-weight: 400;
-    line-height: 43px;
+    line-height: 19px;
+    color: #fff;
 }
 
 .ourChefCard {
@@ -787,10 +791,10 @@ p {
     margin: auto;
 }
 .ourChecfImg {
-    width: 570px;
+        width: 310px;
     position: absolute;
     bottom: 0px;
-    right: -140px;
+    right: 70px;
     top: 0px;
     margin: auto;
     height: fit-content;
@@ -848,8 +852,8 @@ p {
 
 .orderElementi {
     background: url(../img/other/ordernowElement.png);
-    max-width: 1420px;
-    padding: 68px;
+    max-width: 900px;
+    padding: 30px;
     text-align: center;
     background-size: 100%;
     margin: auto;
@@ -858,18 +862,18 @@ p {
 
 .orderElementi h4 {
     color: #fff;
-    font-size: 104px;
-    margin-top: -39px;
+    font-size: 64px;
+    margin-top: 10px;
     position: relative;
-    top: 21px;
+    top: -1px;
 }
 
 
 .orderElementii {
     background: url(../img/other/ordernowElementii.png);
     background-size: 100%;
-    width: 330px;
-    height: 424px;
+    width: 220px;
+    height: 284px;
     margin: auto;
     margin-top: -1px;
     padding: 30px;
@@ -890,11 +894,11 @@ p {
     top: 30px;
 }
 .orderElementii img {
-    width: 70%;
+    width: 80%;
     position: relative;
     margin: auto;
-    top: 21px;
-    left: -7px;
+    top: 4px;
+    left: -6px;
 }
 
 .titleSec.centered {
@@ -907,7 +911,7 @@ p {
 
 .vidplayer {
     width: 100%;
-    height: 90vh;
+    height: 96vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1030,13 +1034,13 @@ p {
     gap: 20px;
 }
 .testiImg {
-   width: 38%;
-   margin: auto;
-   position: relative;
-   top: -130px;
-   animation: zoom-in-zoom-out 12s ease-out infinite;
-   margin-left: 69px;
-   margin-right: 20px;
+    width: 44%;
+    margin: auto;
+    position: relative;
+    top: -130px;
+    animation: zoom-in-zoom-out 12s ease-out infinite;
+    margin-left: -1px;
+    margin-right: 0px;
 }
 @keyframes zoom-in-zoom-out {
   0% {
@@ -1060,60 +1064,74 @@ p {
 
 .testiText {
     width: 70%;
-    padding-right: 210px;
+    padding-right: 80px;
 }
 
 
 .testiCard {
     display: flex;
-    background: url(../img/testimonials/testibg2.png);
-    background-size: contain;
-    height: 100vh;
+    background: url(../img/testimonials/testibg.png);
+    background-size: 100%;
+    height: auto;
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
-    padding: 60px;
+    padding: 0;
     gap: 50px;
+    height: 580px;
 }
 .testiText h4 {
     color: #fff;
     font-family: 'Montserrat';
     font-weight: 300;
-    font-size: 68px;
+    font-size: 30px;
 }
 .testiText p {
     color: #fff;
-    font-size: 39px;
+    font-size: 20px;
     font-weight: 300;
-    margin-top: 22px;
-    line-height: 58px;
+    margin-top: 12px;
+    line-height: 28px;
 }
 
 .testiSwiper {
     margin-top: 100px;
 }
 
-.testiSwiper .swiper-slide.swiper-slide-active .testiCard {
+/* .testiSwiper .swiper-slide.swiper-slide-active .testiCard {
     background: url(../img/testimonials/testibg.png);
-    background-size: 83%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 
 .locationsWrapper {
     width: 100%;
     margin-top: 30px;
+    position: relative;
 }
 .locationsWrapper img {
     width: 100%;
 }
+.locationsWrapper  svg {
+    width: 100%;
+    border-radius: 30px;
+}
 
+.maplogo {
+        position: absolute;
+    width: 280px;
+    right: 50px;
+    bottom: 50px;
+
+}
 
 
 .footer {
-    background: linear-gradient(180deg, #f4ae18, #f27b21);
+    background: linear-gradient(180deg, #f59d1b, #f05a26);
     position: relative;
+    padding-top: 150px;
 }
 .footertitle {
     font-size: 98px;    
@@ -1151,7 +1169,7 @@ p {
 
 
 .footerSocials {
-    margin-top: 50px;
+    margin-top: 120px;
 }
 .socialLinks {
     display: flex;
@@ -1174,6 +1192,27 @@ p {
     font-size: 32px;
 }
 
+.footerelements img {
+    width: 100%;
+}
+.footerelementsOne {
+    position: absolute;
+    width: 390px;
+    top: 60px;
+    left: 450px;
+    right: 0px;
+    margin: auto;
+    height: fit-content;
+}
+.footerelementsTwo {
+    position: absolute;
+    width: 290px;
+    bottom: 120px;
+    left: auto;
+    right: 110px;
+    margin: auto;
+    height: fit-content;
+}
 .footerLogo {
     width: 100%;
     display: flex;
@@ -1204,19 +1243,88 @@ p {
 
 }
 
+.popup {
+  position: absolute;
+  display: none;
+  background: #ffffff;
+  color: #000;
+  padding: 6px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  font-size: 14px;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.lite-tooltip {
+      opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    color: #111;
+    font-color: 14px;
+    padding: 12px;
+    border-radius: 12px;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    text-align: center;
+}
+.lite-tooltip:before {
+      content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #fff transparent transparent transparent;
+    display: inline-block;
+}
+.lite-tooltip.lite-tooltip-bottom:before {
+  bottom: auto;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #3b4355 transparent;
+}
+.lite-tooltip.lite-tooltip-right:before {
+  bottom: auto;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 6px 6px 0;
+  border-color: transparent #3b4355 transparent transparent;
+}
+.lite-tooltip.lite-tooltip-left:before {
+  bottom: auto;
+  left: auto;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent #3b4355;
+}
 
 @media screen and (max-width: 1920px) and (min-width: 1750px) {
     .burgerImg {
-        width: 440px;
-        right: -70px;
-        bottom: -230px;
+        width: 620px;
+        right: -210px;
+        bottom: -320px;
     }
     .funfacImg {
         width: 43%;
         float: right;
         position: absolute;
         right: 60px;
-        bottom: -100px;
+        bottom: -70px;
     }
     .menuCard {
         height: 90vh;
